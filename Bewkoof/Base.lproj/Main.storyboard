@@ -1,25 +1,142 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2PC-zf-aDB">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Sidebar View Controller-->
+        <scene sceneID="bCK-xE-d3I">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kJ1-KO-cKD" customClass="SidebarViewController" customModule="Bewkoof" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="ywt-7H-rMd"/>
+                        <viewControllerLayoutGuide type="bottom" id="A0j-xe-qJa"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="W0G-4W-URa">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="ic_menu_24px" id="Lrq-S5-Kfg">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7eB-eP-m59" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="588" y="256"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="eI5-7O-2rz">
+            <objects>
+                <viewController id="IxW-KJ-i8K" customClass="HomeViewController" customModule="Bewkoof" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Co0-A2-qwK"/>
+                        <viewControllerLayoutGuide type="bottom" id="0iG-kL-q9c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CA9-Oq-itH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ic_home_24px" id="Kcc-8f-7IA">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IXY-tR-8eJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="588" y="939"/>
+        </scene>
+        <!--Tabar View Controller-->
+        <scene sceneID="qiT-NT-S1E">
+            <objects>
+                <tabBarController id="2PC-zf-aDB" customClass="TabarViewController" customModule="Bewkoof" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="uXQ-BB-etc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="kJ1-KO-cKD" kind="relationship" relationship="viewControllers" id="bYt-zu-zb4"/>
+                        <segue destination="IxW-KJ-i8K" kind="relationship" relationship="viewControllers" id="k27-bH-Cal"/>
+                        <segue destination="ixr-yw-7Lk" kind="relationship" relationship="viewControllers" id="WIp-gL-cE2"/>
+                        <segue destination="ljg-tM-pdc" kind="relationship" relationship="viewControllers" id="xyh-xi-PYE"/>
+                        <segue destination="rZA-kj-foS" kind="relationship" relationship="viewControllers" id="N4z-CB-1Mr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AxA-sY-Db5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-294" y="1621"/>
+        </scene>
+        <!--Wish View Controller-->
+        <scene sceneID="veA-Q3-a8P">
+            <objects>
+                <viewController id="ixr-yw-7Lk" customClass="WishViewController" customModule="Bewkoof" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vVW-xn-TKL"/>
+                        <viewControllerLayoutGuide type="bottom" id="WO2-bX-8k5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qda-BQ-OAC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ic_wishlist_24px" id="Wz1-K5-RiF">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k9l-41-ltM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="588" y="1621"/>
+        </scene>
+        <!--Cart View Controller-->
+        <scene sceneID="RBR-4P-Oaq">
+            <objects>
+                <viewController id="ljg-tM-pdc" customClass="CartViewController" customModule="Bewkoof" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="agd-Ud-0gJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="N7L-IN-yZu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oXQ-V3-la4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ic_cart_24px" id="vhk-0S-udl">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FPL-sS-SgP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="588" y="2301"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="SfX-sx-OdV">
+            <objects>
+                <viewController id="rZA-kj-foS" customClass="ProfileViewController" customModule="Bewkoof" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fi4-JR-pmN"/>
+                        <viewControllerLayoutGuide type="bottom" id="z1d-Lf-ZPy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BD1-iy-xOr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ic_person_24px" id="HHt-NE-rhU">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4p4-Zb-Uvr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="588" y="2981"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_cart_24px" width="24" height="24"/>
+        <image name="ic_home_24px" width="24" height="24"/>
+        <image name="ic_menu_24px" width="24" height="24"/>
+        <image name="ic_person_24px" width="24" height="24"/>
+        <image name="ic_wishlist_24px" width="24" height="24"/>
+    </resources>
 </document>

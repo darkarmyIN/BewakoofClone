@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		59C6AEF41D3A35B2005E7522 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C6AEF31D3A35B2005E7522 /* AppDelegate.swift */; };
-		59C6AEF61D3A35B2005E7522 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C6AEF51D3A35B2005E7522 /* ViewController.swift */; };
 		59C6AEF91D3A35B2005E7522 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59C6AEF71D3A35B2005E7522 /* Main.storyboard */; };
 		59C6AEFB1D3A35B2005E7522 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59C6AEFA1D3A35B2005E7522 /* Assets.xcassets */; };
 		59C6AEFE1D3A35B2005E7522 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59C6AEFC1D3A35B2005E7522 /* LaunchScreen.storyboard */; };
+		59C6AF061D3A3669005E7522 /* TabarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C6AF051D3A3669005E7522 /* TabarViewController.swift */; };
+		59C6AF081D3A3675005E7522 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C6AF071D3A3675005E7522 /* BaseViewController.swift */; };
+		59C6AF0A1D3A367A005E7522 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C6AF091D3A367A005E7522 /* SidebarViewController.swift */; };
+		59C6AF0C1D3A3684005E7522 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C6AF0B1D3A3684005E7522 /* HomeViewController.swift */; };
+		59C6AF0E1D3A368C005E7522 /* WishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C6AF0D1D3A368C005E7522 /* WishViewController.swift */; };
+		59C6AF101D3A36A1005E7522 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C6AF0F1D3A36A1005E7522 /* CartViewController.swift */; };
+		59C6AF121D3A36A6005E7522 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C6AF111D3A36A6005E7522 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		59C6AEF01D3A35B2005E7522 /* Bewkoof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bewkoof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59C6AEF31D3A35B2005E7522 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		59C6AEF51D3A35B2005E7522 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		59C6AEF81D3A35B2005E7522 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59C6AEFA1D3A35B2005E7522 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59C6AEFD1D3A35B2005E7522 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59C6AEFF1D3A35B2005E7522 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59C6AF051D3A3669005E7522 /* TabarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabarViewController.swift; sourceTree = "<group>"; };
+		59C6AF071D3A3675005E7522 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		59C6AF091D3A367A005E7522 /* SidebarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
+		59C6AF0B1D3A3684005E7522 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		59C6AF0D1D3A368C005E7522 /* WishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishViewController.swift; sourceTree = "<group>"; };
+		59C6AF0F1D3A36A1005E7522 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		59C6AF111D3A36A6005E7522 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +67,13 @@
 			isa = PBXGroup;
 			children = (
 				59C6AEF31D3A35B2005E7522 /* AppDelegate.swift */,
-				59C6AEF51D3A35B2005E7522 /* ViewController.swift */,
+				59C6AF051D3A3669005E7522 /* TabarViewController.swift */,
+				59C6AF071D3A3675005E7522 /* BaseViewController.swift */,
+				59C6AF091D3A367A005E7522 /* SidebarViewController.swift */,
+				59C6AF0B1D3A3684005E7522 /* HomeViewController.swift */,
+				59C6AF0D1D3A368C005E7522 /* WishViewController.swift */,
+				59C6AF0F1D3A36A1005E7522 /* CartViewController.swift */,
+				59C6AF111D3A36A6005E7522 /* ProfileViewController.swift */,
 				59C6AEF71D3A35B2005E7522 /* Main.storyboard */,
 				59C6AEFA1D3A35B2005E7522 /* Assets.xcassets */,
 				59C6AEFC1D3A35B2005E7522 /* LaunchScreen.storyboard */,
@@ -135,8 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59C6AEF61D3A35B2005E7522 /* ViewController.swift in Sources */,
+				59C6AF0C1D3A3684005E7522 /* HomeViewController.swift in Sources */,
 				59C6AEF41D3A35B2005E7522 /* AppDelegate.swift in Sources */,
+				59C6AF101D3A36A1005E7522 /* CartViewController.swift in Sources */,
+				59C6AF061D3A3669005E7522 /* TabarViewController.swift in Sources */,
+				59C6AF081D3A3675005E7522 /* BaseViewController.swift in Sources */,
+				59C6AF0A1D3A367A005E7522 /* SidebarViewController.swift in Sources */,
+				59C6AF121D3A36A6005E7522 /* ProfileViewController.swift in Sources */,
+				59C6AF0E1D3A368C005E7522 /* WishViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +310,7 @@
 				59C6AF041D3A35B2005E7522 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

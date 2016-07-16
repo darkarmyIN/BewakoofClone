@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
+		
+		if let tabBarVC = self.window?.rootViewController as? UITabBarController {
+			tabBarVC.delegate = self
+			tabBarVC.selectedIndex = 1
+		}
+		
+		UITabBar.appearance().tintColor = UIColor(red: 97/255, green: 197/255, blue: 199/255, alpha: 1)
+		
 		return true
 	}
 
@@ -42,5 +50,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	}
 
 
+}
+
+extension AppDelegate: UITabBarControllerDelegate {
+	
+	func tabBarController(tabBarController: UITabBarController, shouldSelectViewController viewController: UIViewController) -> Bool {
+		if (viewController.isKindOfClass(SidebarViewController.self)) {
+			if let vc = tabBarController.selectedViewController as? BaseViewController {
+				if (!((vc.webView?.loading)!)) {
+					vc.webView?.evaluateJavaScript("document.getElementsByClassName('_mMenuOpener')[0].click();", completionHandler: nil)
+					vc.webView?.evaluateJavaScript("document.getElementsByClassName('_mGetOurApp')[1].style.visibility = 'Hidden'", completionHandler: nil)
+				}
+			}
+			return false
+		}
+		return true
+	}
+	
 }
 
